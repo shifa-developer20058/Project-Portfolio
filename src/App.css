@@ -1,0 +1,3355 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Share+Tech+Mono&family=Lora:wght@400;500;600&display=swap');
+
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#565a5c;
+  color:white;
+}
+
+/* ALL TEXT WHITE */
+h1,h2,h3,h4,h5,h6,p,li,a{
+  color:white;
+}
+
+.section-title{
+  font-family: 'Press Start 2P', monospace;
+
+  font-size: 1rem;
+
+  text-align: center;
+
+  color: #ffffff;
+
+  margin-bottom: 50px;
+
+  letter-spacing: 2px;
+}
+
+/* LINKS */
+a{
+  text-decoration:none;
+}
+
+/* SECTION TITLES */
+.section-title{
+  color:white;
+  text-align:center;
+  font-size:2.5rem;
+  margin-bottom:40px;
+}
+
+/* GLASS CARDS */
+.glass-card,
+.cert-card,
+.internship-card,
+.connect-card,
+.education-card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  backdrop-filter:blur(20px);
+  border-radius:20px;
+  color:white;
+}
+
+.nav-links a{
+  color:white;
+  font-weight:600;
+}
+
+.logo{
+  color:white;
+  font-weight:700;
+}
+
+/* HERO SECTION */
+
+.hero{
+  min-height:80vh;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+}
+
+/* BIG CENTER NAME */
+
+.hero-name{
+  font-family:'Abril Fatface', serif;
+
+  font-size:5rem;
+  font-weight:400;
+
+  color:white;
+
+  margin-bottom:20px;
+
+  text-align:center;
+}
+
+/* TAGLINE */
+
+.hero-tagline{
+  font-family:'Lora', serif;
+
+  font-size:1.4rem;
+
+  color:white;
+
+  max-width:700px;
+
+  text-align:center;
+
+  margin-bottom:35px;
+
+  line-height:1.8;
+}
+
+/* BUTTON WRAPPER */
+
+.hero-buttons{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+
+.btn.primary{
+  background: #8E5A7F;
+  border: none;
+
+  box-shadow:
+    0 0 15px rgba(142,90,127,0.55);
+}
+
+.btn.primary::after{
+  content:"";
+
+  position:absolute;
+
+  top:-6px;
+  left:-6px;
+  right:-6px;
+  bottom:-6px;
+
+  border:2px solid #8E5A7F;
+  border-radius:18px;
+
+  box-shadow:
+    0 0 15px #8E5A7F,
+    0 0 30px #8E5A7F;
+
+  opacity:.9;
+}
+
+.btn.outline{
+  background:#008B8B;
+  border:none;
+
+  box-shadow:
+    0 0 15px rgba(0,139,139,0.35);
+}
+
+.btn.outline::after{
+  content:"";
+
+  position:absolute;
+
+  top:-6px;
+  left:-6px;
+  right:-6px;
+  bottom:-6px;
+
+  border:2px solid #008B8B;
+  border-radius:18px;
+
+  box-shadow:
+    0 0 15px #008B8B,
+    0 0 30px #008B8B;
+
+  opacity:.9;
+}
+
+.btn:hover{
+  transform: translateY(-4px);
+}
+
+/* ALL BUTTON TEXT */
+
+.btn{
+  font-family:'Share Tech Mono', monospace;
+
+  font-size:1rem;
+
+  font-weight:600;
+
+  text-decoration:none;
+
+  padding:14px 30px;
+
+  border-radius:14px;
+
+  transition:.3s ease;
+
+  cursor:pointer;
+
+  color:white;
+
+  border:none;
+}
+
+/* EXPLORE PORTFOLIO */
+
+.btn.primary{
+  background:#8E5A7F;
+}
+
+.btn.primary:hover{
+  transform:translateY(-3px);
+
+  box-shadow:
+  0 0 25px #8E5A7F;
+}
+
+/* VISIT GITHUB */
+
+.btn.outline{
+  background:#008B8B;
+}
+
+.btn.outline:hover{
+  transform:translateY(-3px);
+
+  box-shadow:
+  0 0 25px #008B8B;
+}
+
+
+/* =========================
+   MONITOR FRAME
+========================= */
+
+.monitor-frame {
+  width: 92%;
+  max-width: 1500px;
+
+  margin: 50px auto;
+
+  padding: 22px;
+
+  border-radius: 28px;
+
+  background: rgba(255,255,255,0.9);
+
+  box-shadow:
+    0 0 30px rgba(255,255,255,0.3),
+    0 0 60px rgba(255,255,255,0.15);
+
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   GLOBAL SECTION LAYOUT
+========================= */
+
+section{
+  width:90%;
+  max-width:1200px;
+
+  margin:0 auto;
+  padding:100px 0;
+}
+
+.section-title{
+  text-align:center;
+
+  font-size:3rem;
+
+  margin-bottom:50px;
+
+  color:white;
+}
+
+/* =========================
+   GLASS CARD
+========================= */
+
+.glass-card,
+.cert-card,
+.internship-card,
+.connect-card,
+.works-card,
+.education-card{
+
+  background:rgba(255,255,255,.06);
+
+  border:1px solid rgba(255,255,255,.1);
+
+  backdrop-filter:blur(18px);
+
+  border-radius:24px;
+
+  padding:30px;
+
+  color:white;
+
+  box-shadow:
+  0 0 20px rgba(2,247,216,.08),
+  0 0 30px rgba(168,85,247,.08);
+
+  transition:.3s;
+}
+
+.glass-card:hover,
+.cert-card:hover,
+.internship-card:hover,
+.connect-card:hover,
+.works-card:hover,
+.education-card:hover{
+
+  transform:translateY(-5px);
+
+  box-shadow:
+  0 0 30px rgba(2,247,216,.15),
+  0 0 40px rgba(168,85,247,.12);
+}
+
+/* PROFILE */
+
+.profile-container{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+}
+
+/* EDUCATION */
+
+.education-card{
+  max-width:900px;
+  margin:auto;
+}
+
+/* WORKS */
+
+.works-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(320px,1fr));
+
+  gap:45px;
+}
+
+/* CERTIFICATES */
+
+.cert-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(280px,1fr));
+
+  gap:45px;
+}
+
+/* CONNECT */
+
+.connect-stack{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap:45px;
+}
+
+  .connect-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.beyond-text {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.connect-description {
+  margin-top: 20px;
+}
+
+.connect-cards {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* CONNECT SECTION FIXES */
+.beyond-text {
+  margin-bottom: 20px;
+}
+
+.connect-description {
+  margin-top: 20px;
+}
+
+.connect-cards {
+  margin-top: 50px;
+}
+
+/* =========================
+   BLACK SCREEN
+========================= */
+
+.monitor-screen {
+  min-height: 100vh;
+
+  background: #090909;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:28px 50px;
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+}
+
+.logo{
+  font-size:1.2rem;
+  font-weight:700;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.hero-name{
+  font-family:'Abril Fatface', serif;
+
+  font-size:clamp(70px,9vw,140px);
+
+  text-align:center;
+
+  color:white;
+}
+
+.hero-name{
+  position:relative;
+}
+
+.hero-name::after{
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  left:-100%;
+
+  width:40%;
+  height:100%;
+
+  background:
+  linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.9),
+      transparent
+  );
+
+  animation:sparkle 3s infinite;
+}
+
+@keyframes sparkle{
+
+  0%{
+      left:-100%;
+  }
+
+  100%{
+      left:150%;
+  }
+
+}
+
+.btn{
+  padding:16px 34px;
+
+  font-size:1rem;
+
+  font-weight:700;
+
+  border-radius:18px;
+
+  backdrop-filter:blur(18px);
+
+  color:white;
+}
+
+/* PROFILE QUOTE */
+.quote-box{
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* BLINKING CURSOR */
+.cursor{
+  animation: blink 1s infinite;
+  color: #02F7D8;
+  font-weight: 700;
+}
+
+@keyframes blink{
+  0%,50%{
+    opacity:1;
+  }
+  51%,100%{
+    opacity:0;
+  }
+}
+
+.degree-box{
+  text-align:center;
+  font-size:2rem;
+  font-weight:800;
+  color:#ffffff;
+  margin-bottom:15px;
+}
+
+.college-name{
+  text-align:center;
+  font-size:1.4rem;
+  font-weight:600;
+  color:#02F7D8;
+  margin-bottom:10px;
+}
+
+.edu-meta{
+  text-align:center;
+  font-size:1rem;
+  color:#dcdcdc;
+  margin-bottom:25px;
+}
+
+.logo{
+  font-family: 'Abril Fatface', serif;
+
+  color: white;
+
+  font-size: 1.2rem;
+
+  font-weight:400;
+
+  padding: 8px 18px;
+
+  border: 2px solid #B8804C;
+
+  border-radius: 12px;
+
+  display: inline-block;
+
+  background: transparent;
+
+  box-shadow:
+    0 0 10px rgba(184,128,76,0.4);
+
+  transition: 0.3s ease;
+}
+
+.logo:hover{
+  box-shadow:
+    0 0 20px rgba(184,128,76,0.8);
+
+  transform: translateY(-2px);
+}
+
+.nav-links a{
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 6px;
+}
+
+/* HOME - Purple */
+.nav-links a:nth-child(1)::after{
+  background: #8E5A7F;
+}
+
+/* PROFILE - Turquoise */
+.nav-links a:nth-child(2)::after{
+  background: #008B8B;
+}
+
+/* EDUCATION - Caramel */
+.nav-links a:nth-child(3)::after{
+  background: #B8804C;
+}
+
+/* CERTIFICATIONS - Purple */
+.nav-links a:nth-child(4)::after{
+  background: #8E5A7F;
+}
+
+/* EXPERTISE - Turquoise */
+.nav-links a:nth-child(5)::after{
+  background: #008B8B;
+}
+
+/* WORKS - Caramel */
+.nav-links a:nth-child(6)::after{
+  background: #B8804C;
+}
+
+/* CONNECT - Purple */
+.nav-links a:nth-child(7)::after{
+  background: #8E5A7F;
+}
+
+.nav-links a::after{
+  content:"";
+  position:absolute;
+
+  left:0;
+  bottom:0;
+
+  width:100%;
+  height:2px;   /* thin underline */
+
+  border-radius:10px;
+
+  opacity:.9;
+}
+
+.tag-sparkle{
+  color:#B8804C;
+  font-size:1.5rem;
+  margin:0 12px;
+  display:inline-block;
+
+  text-shadow:
+    0 0 8px #B8804C,
+    0 0 16px rgba(184,128,76,0.7);
+
+  animation:sparkleGlow 2s infinite ease-in-out;
+}
+
+@keyframes sparkleGlow{
+  0%,100%{
+    opacity:.6;
+    transform:scale(1);
+  }
+
+  50%{
+    opacity:1;
+    transform:scale(1.2);
+  }
+}
+
+.tag-sparkle{
+  color:red !important;
+  font-size:2rem !important;
+}
+
+.glass-card h3{
+  margin-bottom: 20px;
+}
+
+.profile-container .glass-card:first-child h3{
+  position: relative;
+  display: inline-block;
+}
+
+.profile-container .glass-card:first-child h3::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 100%;
+  height: 2px;
+
+  background: #8E5A7F;
+  border-radius: 10px;
+}
+
+.profile-container .glass-card:last-child h3{
+  position: relative;
+  display: inline-block;
+}
+
+.profile-container .glass-card:last-child h3::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 100%;
+  height: 2px;
+
+  background: #008B8B;
+  border-radius: 10px;
+}
+
+.section-title::after{
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  transform: translateX(-50%);
+
+  width: 80%;
+  height: 2px;
+
+
+  background: #B8804C;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 0 6px rgba(184,128,76,0.5),
+    0 0 12px rgba(184,128,76,0.25);
+}
+
+.section-title{
+  position: relative;
+
+  width: fit-content;
+
+  margin: 0 auto 50px auto;
+
+  text-align: center;
+
+  padding-bottom: 14px;
+}
+
+.section-title::after{
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  transform: translateX(-50%);
+
+  width: 70%;
+  height: 2px;
+
+  background: #B8804C;
+
+  border-radius: 20px;
+}
+
+.expertise-grid{
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:30px;
+
+  width:90%;
+
+  margin:40px auto;
+}
+
+/* EXPERTISE CARD HEADING UNDERLINES */
+
+.expertise-card h3{
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+}
+
+/* Purple */
+.expertise-card:nth-child(1) h3::after,
+.expertise-card:nth-child(3) h3::after,
+.expertise-card:nth-child(5) h3::after,
+.expertise-card:nth-child(7) h3::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background: #8E5A7F;
+  border-radius: 20px;
+}
+
+/* Turquoise */
+.expertise-card:nth-child(2) h3::after,
+.expertise-card:nth-child(4) h3::after,
+.expertise-card:nth-child(6) h3::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background: #008B8B;
+  border-radius: 20px;
+}
+
+/* Add margin to separate sections and headings */
+.section {
+  margin-bottom: 40px; /* space below each main section */
+}
+
+.side-heading {
+  margin-top: 30px; /* space above side headings */
+  margin-bottom: 20px; /* space below side headings */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.certification-cards, .internship-cards {
+  display: flex;
+  gap: 20px; /* space between cards */
+  margin-top: 10px;
+}
+
+.beyond-text {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.connect-description {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.connect-cards {
+  margin-top: 40px;
+}
+
+.connect-intro h3:nth-of-type(2) {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.connect-intro p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.connect-cards {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Center the footer section */
+.footer-section {
+  display: flex;
+  justify-content: center; /* horizontally center the content */
+  align-items: center;     /* vertically align if needed */
+  padding: 20px;           /* space around the footer */
+  width: 100%;             /* full width */
+  box-sizing: border-box;  /* include padding in width calculation */
+}
+
+/* Optional: style for footer content */
+.footer-content {
+  display: flex;
+  flex-direction: column;    /* stack items vertically */
+  align-items: center;       /* center items horizontally */
+  text-align: center;        /* center text inside */
+  max-width: 600px;          /* optional: limit the width */
+  width: 100%;               /* make it responsive */
+}
+
+/* Additional styling for text elements (optional) */
+.footer-name,
+.footer-tagline,
+.footer-copy {
+  margin: 5px 0; /* spacing between lines */
+}
+
+/* Container section spacing */
+.cert-section {
+  padding: 40px 20px; /* Adjust as needed for spacing around the section */
+  max-width: 1000px;
+  margin: 0 auto; /* Center the entire section */
+}
+
+/* Heading styles */
+.section-title {
+  text-align: center;
+  margin-bottom: 20px; /* Space below the main title */
+}
+
+.cert-heading {
+  text-align: center; /* Center the subheadings */
+  margin-top: 40px; /* Space above the subheading */
+  margin-bottom: 20px; /* Space below the subheading */
+  font-size: 1.8em; /* Optional: larger font size for subheadings */
+}
+
+/* Intro paragraph spacing */
+.cert-intro {
+  max-width: 800px;
+  margin: 0 auto 30px auto; /* Center and space below */
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Certificates grid spacing */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* Space between cards both vertically and horizontally */
+  padding: 20px 0;
+}
+
+/* Certificate card spacing */
+.cert-card {
+  padding: 15px;
+  margin-bottom: 20px; /* Space between cards */
+  background: rgba(255, 255, 255, 0.2); /* Optional: glass effect background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Internship block spacing */
+.internship-block {
+  margin-top: 40px; /* Space above internship section */
+  padding: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Internship card spacing */
+.internship-card {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Space between internship cards if multiple */
+}
+
+/* Center the internship section heading */
+.internship-block h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style for certificate titles inside cards */
+.cert-card h4 {
+  font-weight: bold;
+  margin-top: 15px; /* Space above each title */
+  margin-bottom: 8px; /* Space between title and description */
+  font-size: 1.2em; /* Optional: make titles slightly larger */
+}
+
+/* Style for certificate descriptions inside cards */
+.cert-card p {
+  font-weight: normal; /* Ensures description is normal weight */
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+/* Optional: fine-tune the spacing between title and description */
+.cert-card h4 + p {
+  margin-top: 8px;
+}
+
+/* Style for internship title inside internship card */
+.internship-card h4 {
+  font-weight: bold;
+  margin-top: 15px; /* Space above the internship title */
+  margin-bottom: 8px; /* Space between title and description */
+  font-size: 1.2em; /* Slightly larger for emphasis */
+}
+
+/* Specific styles for the new internship button container, if needed */
+.internship-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px; /* optional spacing above the buttons */
+}
+
+/* Button style for the purple button (matching your .btn.primary) */
+.btn-purple {
+  background: #8E5A7F;
+  border: none;
+  box-shadow: 0 0 15px rgba(142, 90, 127, 0.55);
+  position: relative;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 30px;
+  border-radius: 14px;
+  transition: .3s ease;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-purple::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border: 2px solid #8E5A7F;
+  border-radius: 18px;
+  box-shadow: 0 0 15px #8E5A7F, 0 0 30px #8E5A7F;
+  opacity: .9;
+}
+
+.btn-purple:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px #8E5A7F;
+}
+
+/* Button style for the turquoise button (matching your .btn.outline) with glow shade */
+.btn-turquoise {
+  background: #008B8B;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 139, 139, 0.35);
+  position: relative;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 30px;
+  border-radius: 14px;
+  transition: .3s ease;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-turquoise::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border: 2px solid #008B8B;
+  border-radius: 18px;
+  box-shadow: 0 0 15px #008B8B, 0 0 30px #008B8B;
+  opacity: .9;
+}
+
+.btn-turquoise:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px #008B8B;
+}
+
+/* =============================================
+   CERTIFICATION CARD BUTTONS
+   (Purple & Turquoise - Alternating)
+   ============================================= */
+
+/* Base button styling for cert cards */
+.cert-card .btn-cert {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: white;
+  border: none;
+  display: inline-block;
+  margin-top: 18px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(2px);
+}
+
+/* Purple button style */
+.cert-card .btn-cert.purple {
+  background: #8E5A7F;
+  box-shadow: 0 0 12px rgba(142, 90, 127, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cert-card .btn-cert.purple:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 22px #8E5A7F;
+  background: #9e6c8f;
+}
+
+/* Turquoise button style */
+.cert-card .btn-cert.turquoise {
+  background: #008B8B;
+  box-shadow: 0 0 12px rgba(0, 139, 139, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cert-card .btn-cert.turquoise:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 22px #008B8B;
+  background: #00a0a0;
+}
+
+/* Ensure button alignment inside glass card */
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cert-card p {
+  flex-grow: 1;
+}
+
+/* =============================================
+   INTERNSHIP BUTTON (Caramel Color)
+   ============================================= */
+
+.internship-card .btn-intern {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 14px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: white;
+  border: none;
+  display: inline-block;
+  margin-top: 22px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  background: #B8804C;
+  box-shadow: 0 0 14px rgba(184, 128, 76, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.internship-card .btn-intern:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 24px #B8804C;
+  background: #c9945e;
+}
+
+/* Align button nicely inside internship card */
+.internship-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.internship-card p {
+  flex-grow: 1;
+}
+
+/* =============================================
+   WORKS SECTION HEADING STYLES
+   (Centered, Bold, Caramel Color, Underline)
+   ============================================= */
+
+/* Works section main heading */
+#works .section-title,
+.works-section .section-title,
+section#works .section-title {
+  text-align: center !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 3rem !important;
+  color: #B8804C !important;
+  margin-bottom: 50px !important;
+  position: relative !important;
+  display: inline-block !important;
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+/* Underline effect for works heading */
+#works .section-title::after,
+.works-section .section-title::after,
+section#works .section-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -12px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #B8804C !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 8px rgba(184, 128, 76, 0.6) !important;
+}
+
+/* Alternative if your works section uses a different class */
+.works-heading,
+.works-title {
+  text-align: center !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 3rem !important;
+  color: #B8804C !important;
+  margin-bottom: 50px !important;
+  position: relative !important;
+  display: inline-block !important;
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.works-heading::after,
+.works-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -12px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #B8804C !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 8px rgba(184, 128, 76, 0.6) !important;
+}
+
+/* Fallback: Any h2 inside works section */
+.works-section h2,
+section#works h2,
+.works h2 {
+  text-align: center !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 3rem !important;
+  color: #B8804C !important;
+  margin-bottom: 50px !important;
+  position: relative !important;
+  display: inline-block !important;
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.works-section h2::after,
+section#works h2::after,
+.works h2::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -12px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #B8804C !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 8px rgba(184, 128, 76, 0.6) !important;
+}
+
+/* =============================================
+   WORKS SECTION - PROJECT CARDS STYLES
+   Bold Headings with Colored Underlines
+   ============================================= */
+
+/* Make all project headings bold and centered */
+.works-card h4,
+.works-card .project-title,
+.project-card h4 {
+  font-weight: 700 !important;
+  text-align: center !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 20px !important;
+  padding-bottom: 12px !important;
+  position: relative !important;
+  display: inline-block !important;
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+/* Description styling - ensure spacing */
+.works-card p,
+.works-card .project-description {
+  margin-top: 15px !important;
+  margin-bottom: 0 !important;
+  line-height: 1.6 !important;
+}
+
+/* ===== STARTUP MENTORE - Purple Underline (#8E5A7F) ===== */
+.works-card:nth-child(1) h4::after,
+.works-card:first-child h4::after,
+.works-card:first-child .project-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #8E5A7F !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 10px rgba(142, 90, 127, 0.7) !important;
+}
+
+/* ===== READORIALE ROOM - Turquoise Underline (#008B8B) ===== */
+.works-card:nth-child(2) h4::after,
+.works-card:nth-child(2) .project-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #008B8B !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 10px rgba(0, 139, 139, 0.7) !important;
+}
+
+/* ===== PERSONAL PORTFOLIO - Caramel Underline (#B8804C) ===== */
+.works-card:nth-child(3) h4::after,
+.works-card:nth-child(3) .project-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #B8804C !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 10px rgba(184, 128, 76, 0.7) !important;
+}
+
+/* Fallback selectors if nth-child doesn't work - using data attributes or specific titles */
+/* Startup Mentore specific */
+.works-card h4[data-project="startup-mentore"],
+.works-card:has(h4:contains("Startup Mentore")) h4 {
+  position: relative !important;
+  display: inline-block !important;
+}
+
+.works-card h4[data-project="startup-mentore"]::after,
+.works-card:has(h4:contains("Startup Mentore")) h4::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #8E5A7F !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 10px rgba(142, 90, 127, 0.7) !important;
+}
+
+/* Readoriale Room specific */
+.works-card h4[data-project="readoriale-room"],
+.works-card:has(h4:contains("Readoriale Room")) h4 {
+  position: relative !important;
+  display: inline-block !important;
+}
+
+.works-card h4[data-project="readoriale-room"]::after,
+.works-card:has(h4:contains("Readoriale Room")) h4::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #008B8B !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 10px rgba(0, 139, 139, 0.7) !important;
+}
+
+/* Personal Portfolio specific */
+.works-card h4[data-project="personal-portfolio"],
+.works-card:has(h4:contains("Personal Portfolio")) h4 {
+  position: relative !important;
+  display: inline-block !important;
+}
+
+.works-card h4[data-project="personal-portfolio"]::after,
+.works-card:has(h4:contains("Personal Portfolio")) h4::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #B8804C !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 10px rgba(184, 128, 76, 0.7) !important;
+}
+
+/* Keep your existing styles */
+
+.section-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #fdfbf9; /* White */
+}
+
+/* Caramel underline for "Works" */
+.underline {
+  color: #fdfbf9; /* White text */
+  border-bottom: 4px solid #B76E3F; /* Caramel colored underline */
+  display: inline-block;
+  padding-bottom: 4px; /* optional for spacing */
+}
+
+#works .section-title,
+.works-section .section-title {
+  text-align: center !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 3rem !important;
+  color: white !important;  /* ← NOW WHITE */
+  margin-bottom: 50px !important;
+  position: relative !important;
+  display: inline-block !important;
+  width: auto !important;
+  left: 50% !important;
+          
+}
+
+/* MAIN SECTION HEADING - ALL CAPS */
+.section-title {
+  text-align: center !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 3rem !important;
+  color: white !important;
+  margin-bottom: 50px !important;
+  position: relative !important;
+  display: inline-block !important;
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  text-transform: uppercase !important;
+}
+
+/* SUBHEADINGS - Normal case (no uppercase) */
+.cert-heading {
+  text-align: center !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 2.2rem !important;
+  color: white !important;
+  margin-bottom: 40px !important;
+  margin-top: 20px !important;
+  position: relative !important;
+  display: inline-block !important;
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  text-transform: none !important;
+}
+
+/* Purple underline for Certifications subheading */
+.cert-heading::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -12px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #8E5A7F !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 10px rgba(142, 90, 127, 0.7) !important;
+}
+
+/* Internship subheading - Turquoise underline */
+.internship-block .cert-heading {
+  margin-top: 50px !important;
+  text-transform: none !important;
+}
+
+.internship-block .cert-heading::after {
+  background: #008B8B !important;
+  box-shadow: 0 0 10px rgba(0, 139, 139, 0.7) !important;
+}
+
+
+
+
+/* MAIN SECTION HEADING - ALL CAPS */
+.section-title {
+  text-align: center !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 3rem !important;
+  color: white !important;
+  margin-bottom: 50px !important;
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  text-transform: uppercase !important;
+}
+
+/* SUBHEADINGS - Centered properly */
+.cert-heading {
+  text-align: center !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 2.2rem !important;
+  color: white !important;
+  margin-bottom: 40px !important;
+  margin-top: 20px !important;
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  text-transform: none !important;
+}
+
+/* Purple underline for Certifications subheading */
+.cert-heading::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -12px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 80px !important;
+  height: 3px !important;
+  background: #8E5A7F !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 10px rgba(142, 90, 127, 0.7) !important;
+}
+
+/* Internship subheading - Turquoise underline */
+.internship-block .cert-heading {
+  margin-top: 50px !important;
+  text-transform: none !important;
+}
+
+.internship-block .cert-heading::after {
+  background: #008B8B !important;
+  box-shadow: 0 0 10px rgba(0, 139, 139, 0.7) !important;
+}
+
+/* =============================================
+   CONNECT SECTION - COMPLETE STYLES
+   Cards in One Row with Colored Headings
+   ============================================= */
+
+/* Connect section layout */
+.connect-section {
+  padding: 60px 20px !important;
+  text-align: center !important;
+}
+
+/* Make connect cards appear in one row */
+.connect-stack {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: 30px !important;
+  flex-wrap: wrap !important;
+  margin-top: 40px !important;
+}
+
+/* Individual connect card styling */
+.connect-card {
+  flex: 1 !important;
+  min-width: 200px !important;
+  max-width: 280px !important;
+  text-align: center !important;
+  padding: 25px !important;
+  text-decoration: none !important;
+  transition: 0.3s ease !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.connect-card:hover {
+  transform: translateY(-5px) !important;
+}
+
+/* Card headings - Colored */
+.connect-card h4 {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 15px !important;
+  text-align: center !important;
+}
+
+/* Email heading - Purple */
+.connect-card:first-child h4 {
+  color: #8E5A7F !important;
+}
+
+/* GitHub heading - Caramel */
+.connect-card:nth-child(2) h4 {
+  color: #B8804C !important;
+}
+
+/* Location heading - Turquoise */
+.connect-card:nth-child(3) h4 {
+  color: #008B8B !important;
+}
+
+/* Card details/paragraphs - White */
+.connect-card p {
+  color: white !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 0.85rem !important;
+  margin: 0 !important;
+  word-break: break-word !important;
+}
+
+/* Link styling for email and github */
+.connect-card {
+  color: white !important;
+}
+
+.connect-card:hover p {
+  opacity: 0.8 !important;
+}
+
+/* Connect intro glass card styling */
+.connect-intro {
+  max-width: 700px !important;
+  margin: 0 auto 40px auto !important;
+  text-align: center !important;
+}
+
+.connect-intro h3 {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 1.8rem !important;
+  color: white !important;
+  margin-bottom: 15px !important;
+}
+
+.connect-intro p {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Section heading styling */
+.connect-section .section-title {
+  text-align: center !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 3rem !important;
+  color: white !important;
+  margin-bottom: 30px !important;
+  position: relative !important;
+  display: inline-block !important;
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  text-transform: uppercase !important;
+}
+
+/* Caramel underline for CONNECT heading */
+.connect-section .section-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -12px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #B8804C !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 8px rgba(184, 128, 76, 0.6) !important;
+}
+
+/* =============================================
+   CONNECT SECTION - COMPLETE STYLES (CENTERED)
+   ============================================= */
+
+/* Connect section layout - CENTERED */
+.connect-section {
+  padding: 60px 20px !important;
+  text-align: center !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Make connect cards appear in one row - CENTERED */
+.connect-stack {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 30px !important;
+  flex-wrap: wrap !important;
+  margin-top: 40px !important;
+  width: 100% !important;
+}
+
+/* Individual connect card styling */
+.connect-card {
+  flex: 1 !important;
+  min-width: 200px !important;
+  max-width: 280px !important;
+  text-align: center !important;
+  padding: 25px !important;
+  text-decoration: none !important;
+  transition: 0.3s ease !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.connect-card:hover {
+  transform: translateY(-5px) !important;
+}
+
+/* Card headings - Colored */
+.connect-card h4 {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 15px !important;
+  text-align: center !important;
+}
+
+/* Email heading - Purple */
+.connect-card:first-child h4 {
+  color: #8E5A7F !important;
+}
+
+/* GitHub heading - Caramel */
+.connect-card:nth-child(2) h4 {
+  color: #B8804C !important;
+}
+
+/* Location heading - Turquoise */
+.connect-card:nth-child(3) h4 {
+  color: #008B8B !important;
+}
+
+/* Card details/paragraphs - White */
+.connect-card p {
+  color: white !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 0.85rem !important;
+  margin: 0 !important;
+  word-break: break-word !important;
+}
+
+/* Link styling for email and github */
+.connect-card {
+  color: white !important;
+}
+
+.connect-card:hover p {
+  opacity: 0.8 !important;
+}
+
+/* Connect intro glass card styling - CENTERED */
+.connect-intro {
+  max-width: 700px !important;
+  margin: 0 auto 40px auto !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.connect-intro h3 {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 1.8rem !important;
+  color: white !important;
+  margin-bottom: 15px !important;
+}
+
+.connect-intro p {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Section heading styling - CENTERED */
+.connect-section .section-title {
+  text-align: center !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 3rem !important;
+  color: white !important;
+  margin-bottom: 30px !important;
+  position: relative !important;
+  display: inline-block !important;
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  text-transform: uppercase !important;
+}
+
+/* Caramel underline for CONNECT heading */
+.connect-section .section-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -12px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #B8804C !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 8px rgba(184, 128, 76, 0.6) !important;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* default cards */
+.expertise-card {
+  justify-self: center;
+}
+
+/* last card centered properly */
+.expertise-grid .expertise-card:nth-child(7) {
+  grid-column: 2 / 3;
+  justify-self: center;
+}
+
+/* =============================================
+   WORKS SECTION - CENTERED THIRD CARD
+   First two cards side by side, third card centered
+   ============================================= */
+
+/* Works section layout */
+.works-section {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 100px 20px !important;
+}
+
+/* Section title - White with Caramel underline */
+#works h2,
+.works-section h2 {
+  text-align: center !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 3rem !important;
+  color: white !important;
+  margin-bottom: 50px !important;
+  position: relative !important;
+  display: inline-block !important;
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+/* Caramel underline for Works heading */
+#works h2::after,
+.works-section h2::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -12px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #B8804C !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 8px rgba(184, 128, 76, 0.6) !important;
+}
+
+/* Works grid - makes first two cards side by side, third card centered */
+.works-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 40px !important;
+  justify-items: center !important;
+  align-items: stretch !important;
+}
+
+/* Third card - spans full width and centered */
+.works-grid .works-card:last-child {
+  grid-column: span 2 !important;
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+
+/* Works card styling */
+.works-card {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(18px) !important;
+  border-radius: 24px !important;
+  padding: 30px !important;
+  color: white !important;
+  box-shadow: 0 0 20px rgba(2, 247, 216, 0.08), 0 0 30px rgba(168, 85, 247, 0.08) !important;
+  transition: 0.3s !important;
+  width: 100% !important;
+}
+
+.works-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 0 30px rgba(2, 247, 216, 0.15), 0 0 40px rgba(168, 85, 247, 0.12) !important;
+}
+
+/* Project title styling - Bold with colored underlines */
+.project-title {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  text-align: center !important;
+  margin-bottom: 20px !important;
+  padding-bottom: 12px !important;
+  position: relative !important;
+  display: inline-block !important;
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+/* Readoraire Room - Turquoise underline */
+.works-card:first-child .project-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #008B8B !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 10px rgba(0, 139, 139, 0.7) !important;
+}
+
+/* Startup Mentore - Purple underline */
+.works-card:nth-child(2) .project-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #8E5A7F !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 10px rgba(142, 90, 127, 0.7) !important;
+}
+
+/* Personal Portfolio - Caramel underline */
+.works-card:last-child .project-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #B8804C !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 10px rgba(184, 128, 76, 0.7) !important;
+}
+
+/* Project sub title styling */
+.project-sub {
+  color: #02F7D8 !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 1rem !important;
+  margin-bottom: 15px !important;
+  text-align: center !important;
+  font-weight: 600 !important;
+}
+
+/* Project description text */
+.works-card p:not(.project-sub) {
+  color: rgba(255, 255, 255, 0.85) !important;
+  line-height: 1.6 !important;
+  font-size: 0.95rem !important;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .works-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .works-grid .works-card:last-child {
+    grid-column: span 1 !important;
+  }
+}
+
+/* Make all sections transparent to show monitor frame */
+section, .cert-section, .works-section, .connect-section {
+  background: transparent !important;
+}
+
+/* Adjust glass cards to be slightly transparent */
+.glass, .cert-card, .works-card, .connect-card, .internship-card {
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(18px) !important;
+}
+
+/* =============================================
+   COMPLETE FIXES - MONITOR & CONNECT SECTION
+   No bottom scrollbar, Connect centered
+   ============================================= */
+
+/* Remove all horizontal scrolling */
+html, body, #root, .App {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  background: #090909 !important;
+}
+
+/* Make computer wrapper take full height */
+.computer-wrapper {
+  position: relative !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow-x: hidden !important;
+}
+
+/* Expand computer monitor to full height */
+.computer-monitor {
+  width: 95% !important;
+  max-width: 1600px !important;
+  min-height: 98vh !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 40px !important;
+  border: 3px solid rgba(2, 247, 216, 0.3) !important;
+  box-shadow: 0 0 30px rgba(2, 247, 216, 0.2), inset 0 0 30px rgba(2, 247, 216, 0.05) !important;
+  position: relative !important;
+  backdrop-filter: blur(2px) !important;
+  margin: 15px auto !important;
+  overflow: hidden !important;
+}
+
+/* Inner screen area - NO BOTTOM SCROLLBAR */
+.monitor-screen {
+  width: 100% !important;
+  min-height: 98vh !important;
+  border-radius: 38px !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  position: relative !important;
+  background: #0a0a0a !important;
+  padding: 20px 0 40px 0 !important;
+}
+
+/* Hide bottom scrollbar completely */
+.monitor-screen::-webkit-scrollbar {
+  width: 6px !important;
+  height: 0px !important;
+}
+
+.monitor-screen::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
+}
+
+.monitor-screen::-webkit-scrollbar-thumb {
+  background: #8E5A7F !important;
+  border-radius: 10px !important;
+}
+
+/* Hide horizontal scrollbar */
+.monitor-screen::-webkit-scrollbar-horizontal {
+  display: none !important;
+  height: 0 !important;
+}
+
+/* Fix Connect section - PERFECT CENTERING */
+.connect-section {
+  width: 100% !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
+}
+
+.connect-stack {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 35px !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+.connect-card {
+  flex: 0 1 auto !important;
+  min-width: 200px !important;
+  max-width: 260px !important;
+  text-align: center !important;
+}
+
+/* Connect intro card centering */
+.connect-intro {
+  margin: 0 auto 40px auto !important;
+  text-align: center !important;
+  width: 90% !important;
+  max-width: 700px !important;
+}
+
+/* Fix all section containers to be centered */
+.cert-section, 
+.works-section, 
+.connect-section, 
+.profile-section, 
+.education-section, 
+.expertise-section {
+  width: 90% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 50px 20px !important;
+}
+
+/* Fix glass cards visibility */
+.glass, 
+.cert-card, 
+.works-card, 
+.connect-card, 
+.internship-card {
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(18px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* CONNECT heading - ensure centering */
+.connect-section .section-title {
+  text-align: center !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  position: relative !important;
+  width: fit-content !important;
+}
+
+/* Caramel underline for CONNECT heading */
+.connect-section .section-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -12px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #B8804C !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 8px rgba(184, 128, 76, 0.6) !important;
+}
+
+/* Fix any potential margin issues */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .computer-monitor {
+    width: 98% !important;
+    min-height: 96vh !important;
+    margin: 10px auto !important;
+  }
+  
+  .monitor-screen {
+    min-height: 96vh !important;
+    padding: 15px 0 30px 0 !important;
+  }
+  
+  .connect-stack {
+    gap: 20px !important;
+    flex-direction: column !important;
+  }
+  
+  .connect-card {
+    width: 90% !important;
+    max-width: 280px !important;
+  }
+  
+  .cert-section, 
+  .works-section, 
+  .connect-section {
+    padding: 30px 15px !important;
+  }
+}
+
+/* FIX FOR CONNECT SECTION - REMOVE BOX FROM INTRO */
+.connect-intro {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Ensure connect cards have glass effect but not the intro */
+.connect-card {
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(18px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Caramel underline for CONNECT heading */
+.connect-section .section-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -12px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #B8804C !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 8px rgba(184, 128, 76, 0.6) !important;
+}
+
+/* FORCE WORKS HEADING TO BE WHITE */
+.works-section h2,
+.works-section > h2,
+section#works h2,
+#works > h2 {
+  color: white !important;
+}
+
+/* Keep caramel underline only */
+.works-section h2::after,
+section#works h2::after {
+  background: #B8804C !important;
+  content: "" !important;
+  position: absolute !important;
+  bottom: -12px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 8px rgba(184, 128, 76, 0.6) !important;
+}
+
+/* FORCE CONNECT SECTION TO BE CENTERED */
+.connect-section {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+.connect-section .section-title {
+  text-align: center !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: fit-content !important;
+}
+
+.connect-stack {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 35px !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+}
+
+.connect-card {
+  text-align: center !important;
+  margin: 0 auto !important;
+}
+
+/* COMPLETE SPARKLE FIX - CARAMEL COLOR */
+.hero-name {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.hero-name::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #B8804C,
+    transparent
+  ) !important;
+  animation: caramelSparkle 3s infinite;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+@keyframes caramelSparkle {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+/* FORCE CARAMEL SPARKLE ON HERO NAME */
+.hero-name {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.hero-name::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: -100% !important;
+  width: 40% !important;
+  height: 100% !important;
+  background: linear-gradient(90deg, transparent, #B8804C, transparent) !important;
+  animation: caramelGlow 3s infinite !important;
+  opacity: 0.7 !important;
+  pointer-events: none !important;
+}
+
+@keyframes caramelGlow {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+/* Also fix any tag-sparkle if present */
+.tag-sparkle {
+  background: #B8804C !important;
+  box-shadow: 0 0 10px #B8804C !important;
+}
+
+/* FIX TAGLINE TO BE IN ONE LINE */
+.hero-tagline {
+  white-space: nowrap !important;
+  display: inline-block !important;
+  font-size: 1.2rem !important;
+  text-align: center !important;
+}
+
+/* For mobile screens, make font smaller so it stays in one line */
+@media (max-width: 768px) {
+  .hero-tagline {
+    white-space: nowrap !important;
+    font-size: 0.85rem !important;
+    padding: 0 10px !important;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .hero-tagline {
+    white-space: normal !important;
+    text-align: center !important;
+    max-width: 90% !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* =============================================
+   FIXES FOR WORKS & EDUCATION SECTION
+   ============================================= */
+
+/* WORKS SECTION - Fix turquoise description to white */
+.works-card .project-sub {
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+}
+
+/* Make the sparkle (✦) in works section white */
+.works-card .project-sub {
+  color: white !important;
+}
+
+/* If the sparkle is a separate element */
+.project-sub .sparkle,
+.project-sub span {
+  color: white !important;
+}
+
+/* EDUCATION SECTION - Fix college name to white */
+.education-card h3,
+.college-name {
+  color: white !important;
+}
+
+/* Bachelor of Computer Applications heading with purple sparkles */
+.education-card h2,
+.degree-box {
+  color: white !important;
+  position: relative !important;
+  display: inline-block !important;
+  padding: 0 20px !important;
+}
+
+/* Add purple sparkles before and after */
+.education-card h2::before,
+.degree-box::before {
+  content: "✦" !important;
+  color: #fdfdfd !important;
+  font-size: 1.5rem !important;
+  position: relative !important;
+  margin-right: 10px !important;
+  display: inline-block !important;
+}
+
+.education-card h2::after,
+.degree-box::after {
+  content: "✦" !important;
+  color: #fdfdfd !important;
+  font-size: 1.5rem !important;
+  position: relative !important;
+  margin-left: 10px !important;
+  display: inline-block !important;
+}
+
+/* Ensure the degree text is white */
+.degree-box {
+  color: white !important;
+}
+
+/* Any other blue text in education */
+.education-card p,
+.edu-meta,
+.college-details {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Remove any blue from links or other elements */
+a, .college-name, .university {
+  color: white !important;
+}
+
+/* =============================================
+   EDUCATION SECTION COMPLETE FIXES
+   ============================================= */
+
+/* Make all purple text white */
+.education-card h3,
+.college-name,
+.edu-meta,
+.education-card p,
+.education-card li {
+  color: white !important;
+}
+
+/* Bachelor of Computer Applications - Centered with white sparkles */
+.degree-box {
+  text-align: center !important;
+  color: white !important;
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 20px !important;
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+/* Add white sparkles before and after */
+.degree-box::before {
+  content: "✦" !important;
+  color: white !important;
+  font-size: 1.8rem !important;
+  margin-right: 15px !important;
+  display: inline-block !important;
+}
+
+.degree-box::after {
+  content: "✦" !important;
+  color: white !important;
+  font-size: 1.8rem !important;
+  margin-left: 15px !important;
+  display: inline-block !important;
+}
+
+/* College name - white */
+.college-name {
+  text-align: center !important;
+  color: white !important;
+  font-size: 1.3rem !important;
+  margin-bottom: 10px !important;
+}
+
+/* Location and date */
+.edu-meta {
+  text-align: center !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  margin-bottom: 25px !important;
+}
+
+/* Description text - add spacing */
+.education-card p {
+  line-height: 1.8 !important;
+  margin-bottom: 25px !important;
+  text-align: justify !important;
+}
+
+/* Core focus heading - add spacing above */
+.education-card h4,
+.core-heading {
+  margin-top: 30px !important;
+  margin-bottom: 15px !important;
+  color: white !important;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+}
+
+/* List items - add spacing */
+.education-card ul,
+.core-list {
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+  padding-left: 30px !important;
+}
+
+.education-card li,
+.core-list li {
+  margin-bottom: 8px !important;
+  line-height: 1.6 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Extra spacing between description and core focus */
+.education-card p:last-of-type {
+  margin-bottom: 30px !important;
+}
+
+/* =============================================
+   EDUCATION SECTION COMPLETE FIXES
+   ============================================= */
+
+/* Make all purple text white */
+.education-card h3,
+.college-name,
+.edu-meta,
+.education-card p,
+.education-card li {
+  color: white !important;
+}
+
+/* Bachelor of Computer Applications - Centered with white sparkles */
+.degree-box {
+  text-align: center !important;
+  color: white !important;
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 20px !important;
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+/* Add white sparkles before and after */
+.degree-box::before {
+  content: "✦" !important;
+  color: white !important;
+  font-size: 1.8rem !important;
+  margin-right: 15px !important;
+  display: inline-block !important;
+}
+
+.degree-box::after {
+  content: "✦" !important;
+  color: white !important;
+  font-size: 1.8rem !important;
+  margin-left: 15px !important;
+  display: inline-block !important;
+}
+
+/* College name - white */
+.college-name {
+  text-align: center !important;
+  color: white !important;
+  font-size: 1.3rem !important;
+  margin-bottom: 10px !important;
+}
+
+/* Location and date */
+.edu-meta {
+  text-align: center !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  margin-bottom: 25px !important;
+}
+
+/* Description text - add spacing */
+.education-card p {
+  line-height: 1.8 !important;
+  margin-bottom: 25px !important;
+  text-align: justify !important;
+}
+
+/* Core focus heading - add spacing above */
+.education-card h4,
+.core-heading {
+  margin-top: 30px !important;
+  margin-bottom: 15px !important;
+  color: white !important;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+}
+
+/* List items - add spacing */
+.education-card ul,
+.core-list {
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+  padding-left: 30px !important;
+}
+
+.education-card li,
+.core-list li {
+  margin-bottom: 8px !important;
+  line-height: 1.6 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Extra spacing between description and core focus */
+.education-card p:last-of-type {
+  margin-bottom: 30px !important;
+}
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+
+.cert-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 30px !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+}
+
+.cert-card {
+  flex: 0 1 300px !important;
+}
+
+* =============================================
+   CERTIFICATIONS - RESTORED & FIXED
+   ============================================= */
+
+.cert-section {
+  width: 100%;
+  padding: 60px 20px;
+}
+
+.cert-heading {
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cert-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #8E5A7F;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(142, 90, 127, 0.7);
+}
+
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cert-card {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 25px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+}
+
+.cert-card h4 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.cert-card p {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.btn-cert {
+  display: inline-block;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+  width: 110px;
+  margin: 15px auto 0 auto;
+}
+
+.btn-cert.purple {
+  background: #8E5A7F;
+  color: white;
+  box-shadow: 0 0 12px rgba(142, 90, 127, 0.5);
+}
+
+.btn-cert.turquoise {
+  background: #008B8B;
+  color: white;
+  box-shadow: 0 0 12px rgba(0, 139, 139, 0.45);
+}
+
+.btn-cert:hover {
+  transform: translateY(-3px);
+}
+
+/* Internship card */
+.internship-block .cert-heading::after {
+  background: #008B8B;
+  box-shadow: 0 0 10px rgba(0, 139, 139, 0.7);
+}
+
+.internship-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 30px;
+}
+
+.internship-card h4 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.3rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.internship-card p {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.btn-intern {
+  display: inline-block;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 14px;
+  text-align: center;
+  background: #B8804C;
+  color: white;
+  box-shadow: 0 0 14px rgba(184, 128, 76, 0.5);
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn-intern:hover {
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .cert-card {
+    width: 280px;
+  }
+}
+
+/* =============================================
+   CONNECT SECTION - FORCE CENTER
+   ============================================= */
+
+.connect-section {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+  padding: 60px 20px !important;
+}
+
+.connect-section .section-title {
+  text-align: center !important;
+  display: block !important;
+  margin: 0 auto 30px auto !important;
+  width: fit-content !important;
+}
+
+.connect-stack {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 35px !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+}
+
+.connect-card {
+  text-align: center !important;
+  margin: 0 auto !important;
+}
+
+.connect-intro {
+  text-align: center !important;
+  margin: 0 auto 40px auto !important;
+  background: transparent !important;
+  border: none !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+/* FORCE CONNECT CENTERING - OVERRIDE EVERYTHING */
+.connect-section {
+  position: relative !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
+  clear: both !important;
+}
+
+.connect-section .section-title,
+.connect-section h2 {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+}
+
+.connect-stack {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 35px !important;
+  flex-wrap: wrap !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+/* Fix any parent containers */
+.App,
+.computer-monitor,
+.monitor-screen,
+.computer-wrapper {
+  overflow-x: visible !important;
+}
+
+/* YOUR EXISTING CONNECT CSS HERE */
+
+/* GLOBAL CENTERING FIX */
+.connect-section {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.connect-section > * {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* FIX LANGUAGES CARD SIZE IN EXPERTISE SECTION */
+.expertise-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 30px !important;
+}
+
+.expertise-card {
+  width: 280px !important;
+  min-height: 300px !important;
+  flex: 0 0 auto !important;
+}
+
+/* Make all cards in expertise same height */
+.expertise-card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+
+.expertise-card ul {
+  flex-grow: 1 !important;
+}
+
+/* =============================================
+   EXPERTISE SECTION - RESTORE CARD STYLES
+   ============================================= */
+
+.expertise-section {
+  width: 100%;
+  padding: 60px 20px;
+}
+
+.expertise-section .section-title {
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.expertise-section .section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #008B8B;
+  border-radius: 3px;
+  box-shadow: 0 0 8px rgba(0, 139, 139, 0.6);
+}
+
+.expertise-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.expertise-card {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.expertise-card:hover {
+  transform: translateY(-5px);
+}
+
+.expertise-card h3 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #02F7D8;
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+
+.expertise-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.expertise-card li {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 8px 0;
+  text-align: center;
+  position: relative;
+}
+
+.expertise-card li::before {
+  content: "✦";
+  color: #8E5A7F;
+  margin-right: 8px;
+  font-size: 0.8rem;
+}
+
+/*=======================================
+   EXPERTISE SECTION - COMPLETE FIX
+   ============================================= */
+
+.expertise-section .section-title {
+  text-align: center !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-weight: 700 !important;
+  font-size: 3rem !important;
+  color: white !important;
+  margin-bottom: 50px !important;
+  position: relative !important;
+  display: inline-block !important;
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+/* Caramel underline for EXPERTISE heading */
+.expertise-section .section-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -12px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #B8804C !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 8px rgba(184, 128, 76, 0.6) !important;
+}
+
+/* Card headings - WHITE color (not turquoise) */
+.expertise-card h3 {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  color: white !important;
+  margin-bottom: 15px !important;
+  text-align: center !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+  padding-bottom: 10px !important;
+}
+
+/* List items - WHITE with purple sparkle */
+.expertise-card li {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 0.9rem !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  padding: 8px 0 !important;
+  text-align: center !important;
+  list-style: none !important;
+}
+
+.expertise-card li::before {
+  content: "✦" !important;
+  color: #8E5A7F !important;
+  margin-right: 8px !important;
+  font-size: 0.8rem !important;
+}
+
+/* Remove default list styling */
+.expertise-card ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Card styling */
+.expertise-card {
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(18px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 24px !important;
+  padding: 25px !important;
+  transition: 0.3s !important;
+  width: 300px !important;
+}
+
+.expertise-card:hover {
+  transform: translateY(-5px) !important;
+}
+
+/* =============================================
+   EXPERTISE SECTION - CENTERED UNDERLINE & ALIGNED SPARKLES
+   ============================================= */
+
+/* Center the caramel underline */
+.expertise-section .section-title {
+  text-align: center !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: fit-content !important;
+  position: relative !important;
+}
+
+.expertise-section .section-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -12px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #B8804C !important;
+  border-radius: 3px !important;
+}
+
+/* Fix sparkle alignment - make all in same column */
+.expertise-card ul {
+  list-style: none !important;
+  padding-left: 20px !important;
+  margin: 0 !important;
+}
+
+.expertise-card li {
+  display: flex !important;
+  align-items: center !important;
+  padding: 6px 0 !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 0.9rem !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.expertise-card li::before {
+  content: "✦" !important;
+  color: #8E5A7F !important;
+  font-size: 0.8rem !important;
+  margin-right: 10px !important;
+  display: inline-block !important;
+  width: 20px !important;
+  text-align: center !important;
+}
+
+/* Card heading white */
+.expertise-card h3 {
+  color: white !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  margin-bottom: 15px !important;
+  padding-bottom: 10px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Force all sparkles same width */
+.expertise-card li::before {
+  content: "✦" !important;
+  color: #8E5A7F !important;
+  display: inline-block !important;
+  width: 25px !important;
+  text-align: left !important;
+  margin-right: 8px !important;
+}
+
+.expertise-card li {
+  display: block !important;
+  text-align: left !important;
+  padding-left: 0 !important;
+}
+
+/* =============================================
+   EXPERTISE SECTION - FINAL FIX
+   ============================================= */
+
+/* Center EXPERTISE heading */
+.expertise-section {
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.expertise-section .section-title {
+  text-align: center !important;
+  display: inline-block !important;
+  margin: 0 auto !important;
+  position: relative !important;
+  color: white !important;
+  font-size: 3rem !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  width: auto !important;
+  left: auto !important;
+  transform: none !important;
+}
+
+/* Caramel underline centered */
+.expertise-section .section-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -12px !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #B8804C !important;
+  border-radius: 3px !important;
+  margin: 0 auto !important;
+}
+
+/* White sparkles */
+.expertise-card li::before {
+  content: "✦" !important;
+  color: white !important;
+  font-size: 0.9rem !important;
+  margin-right: 10px !important;
+  display: inline-block !important;
+  width: 22px !important;
+  text-align: center !important;
+}
+
+/* Card headings white */
+.expertise-card h3 {
+  color: white !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  margin-bottom: 15px !important;
+  padding-bottom: 10px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* List items */
+.expertise-card li {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 0.9rem !important;
+  padding: 6px 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Grid layout */
+.expertise-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 30px !important;
+  margin-top: 40px !important;
+}
+
+/* Center EXPERTISE heading with underline */
+.expertise-section .section-title {
+  text-align: center !important;
+  display: inline-block !important;
+  position: relative !important;
+  color: white !important;
+  font-size: 3rem !important;
+  font-family: 'Share Tech Mono', monospace !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: fit-content !important;
+}
+
+/* Centered caramel underline */
+.expertise-section .section-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -12px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: #B8804C !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 8px rgba(184, 128, 76, 0.6) !important;
+}
+
+/* FIX NAVBAR SCROLLING FOR CERTIFICATIONS & EXPERTISE */
+html {
+  scroll-behavior: smooth;
+}
+
+#certifications, #expertise {
+  scroll-margin-top: 80px;
+  display: block;
+  position: relative;
+}
+
+/* Ensure sections have proper anchor positioning */
+.cert-section, .expertise-section {
+  scroll-margin-top: 80px;
+}
+

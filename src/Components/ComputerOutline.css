@@ -1,0 +1,94 @@
+/* =============================================
+   COMPUTER OUTLINE - FULL PAGE MONITOR FRAME
+   ============================================= */
+
+.computer-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.computer-monitor {
+  width: 95%;
+  max-width: 1600px;
+  min-height: 90vh;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  border: 3px solid rgba(2, 247, 216, 0.3);
+  box-shadow: 
+    0 0 30px rgba(2, 247, 216, 0.2),
+    inset 0 0 30px rgba(2, 247, 216, 0.05);
+  position: relative;
+  backdrop-filter: blur(2px);
+}
+
+/* Monitor screen inner area */
+.monitor-screen {
+  width: 100%;
+  min-height: 100%;
+  border-radius: 38px;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+}
+
+/* Stand/base of the computer */
+.computer-monitor::before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 40px;
+  background: rgba(2, 247, 216, 0.2);
+  border-radius: 0 0 20px 20px;
+  border: 1px solid rgba(2, 247, 216, 0.3);
+}
+
+.computer-monitor::after {
+  content: "";
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 30px;
+  background: rgba(2, 247, 216, 0.1);
+  border-radius: 5px;
+  border: 1px solid rgba(2, 247, 216, 0.2);
+}
+
+/* Make sure content doesn't overflow */
+.monitor-screen > * {
+  max-width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .computer-monitor {
+    width: 98%;
+    border-radius: 25px;
+  }
+  
+  .monitor-screen {
+    border-radius: 23px;
+  }
+  
+  .computer-monitor::before {
+    width: 80px;
+    height: 30px;
+    bottom: -30px;
+  }
+  
+  .computer-monitor::after {
+    width: 50px;
+    height: 20px;
+    bottom: -55px;
+  }
+}
