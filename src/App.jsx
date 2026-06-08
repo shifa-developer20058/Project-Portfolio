@@ -5,7 +5,7 @@ import Profile from './components/Profile';
 import Education from './components/Education';
 import Expertise from './components/Expertise';
 import Works from './components/Works';
-import Certificates from './components/Certifications';
+import Certifications from './components/Certifications';
 import Connect from './components/Connect';
 import Footer from './components/Footer';
 import Background from './components/Background';
@@ -25,7 +25,7 @@ function App() {
           <Education />
           <Expertise />
           <Works />
-          <Certificates />
+          <Certifications />
           <Connect />
           <Footer />
         </div>
